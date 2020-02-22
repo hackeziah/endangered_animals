@@ -1,0 +1,46 @@
+<div class="main-top" id="home">
+		<!-- header -->
+	<header>
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
+					<!-- logo -->
+					<div id="logo">
+						<h1><a class="" href="{% url 'animals:index' %}" >Endangered Animals of the Philippines</a></h1>
+					</div>
+					<!-- //logo -->
+
+					<!-- nav -->
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+								<li class="mx-lg-4 mx-md-3 my-md-0 my-2"><a href="{% url 'animals:index' %}" class="active">Home</a></li>
+								<li class="mx-lg-4 mx-md-3 my-md-0 my-2"><a href="{% url 'animals:gallery' %}">Gallery</a></li>
+								<li class="mx-lg-4 mx-md-3 my-md-0 my-2">
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">All Blog <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul>
+										<li><a href="{% url 'animals:blog' %}" class="drop-text">Blog</a></li>
+										<li><a href="{% url 'animals:view-add-blog'%}" class="drop-text">Add Blog</a></li>
+									</ul>
+								</li>
+								<li><a href="{% url 'animals:contact-us' %}">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //nav -->
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- banner -->
+		<div class="banner_w3lspvt-2">
+
+		</div>
+		<!-- //banner -->
+	</div>
