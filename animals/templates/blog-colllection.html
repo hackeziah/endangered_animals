@@ -13,9 +13,9 @@
                 <thead>
                     <tr>
                         <th>Title</th>
-                        <th>Publish By</th>
+                        <th>Created By</th>
                         <th>Status</th>
-                        <th></th>
+                        <th>Date Publish</th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -32,20 +32,18 @@
                         {% elif data.status == 1 %}
                             <p>Not Publish</p>
                         {% endif %}
-
+                        </td>
+                        <td>
+                            {{ data.date_posted}}
                         </td>
                         <td>
                             <a href="{% url 'animals:view_single_blog' data.id %}" class="btn btn-primary">View</a>
-
                         </td>
                         <td>
                             <a href="{% url 'animals:update_post_list' data.id %}" class="btn btn-primary">Update</a>
                         </td>
                         <td>
                             <a href="{% url 'animals:delete_post' data.id %}" class="btn btn-danger">Delete</a>
-                        </td>
-                        <td>
-
                         </td>
                     </tr>
                 {% endfor %}
