@@ -43,14 +43,6 @@ def view_single(request, post_id):
     template = 'single.html'
     return render(request, template, context)
 
-# def view_comments(request,post_id):
-#     comments = Comment.objects.get(post = int(post_id))
-#     context = {
-#          'single_post': single_post, #same always
-#             #  'comments': comments,
-#     }
-#     return render(request,template,context)
-
 
 def view_all_posts(request):  # view_all_Post->For all Blog view by Admin
     posts = Post.objects.all()
