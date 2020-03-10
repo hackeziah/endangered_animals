@@ -28,6 +28,7 @@ def blog(request):  # view_all_Blog by users
     context = {
         'posts': posts,  # same always
     }
+    # context['data'] = 'Test Input'
     return render(request, template, context)
 
 
